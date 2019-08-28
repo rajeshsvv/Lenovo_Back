@@ -1,0 +1,17 @@
+{
+  "name": "Programming",
+  "age": 22,
+  "marks": [
+    90,
+    50,
+    60,
+    70
+  ],
+  "object": {
+    "color": [
+      "red",
+      "color"
+    ]
+  },
+  "pass": true
+}

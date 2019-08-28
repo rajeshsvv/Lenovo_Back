@@ -1,0 +1,347 @@
+6:56  you want to collect data from the internet which is web scrapping
+that is extract data from the websites.
+
+12:22   help()  and enter keywords now u get a list of python keywords.
+
+18:13       \n  break line character it breaks the content in two lines in print statement.
+            its new line character.
+20:30       A python identifier is name used to identify a variable,function,class,module or other object.
+
+20:42   start an identifier with single leading underscore ------>identifier is private   _b
+        start an identifier with two leading underscores    ----->identifier is strongly private identifier. __b
+
+       python does not allow special characters in variables example %,$,*,{} etc..
+
+27:40   the continuous set of characters represented within quotation is called as string.
+
+29:48  list is an order set of values or elements encloses within square brackets.
+        tuples are faster than lists.
+
+32:28   if u want fixed value you use tuple and tuples are faster compared to lists.
+        for example pi.pi value is 3.14 it is fixed value we dont need to change the value.
+
+36:40   set is an unordered collection of an items.every element is unique.
+
+37:01   Operators are the constructors which can manipulate the values of the Operands.
+42:04   in logical operator and always return lower value and or always returns higher value
+        a=2 b=3  a and b==>2   a or b==>3
+
+46:03   conditional statements are if and elif else.
+46:43   conditional statements are use to execute a statement or group of statements when some condition is true.
+
+51:56   a loop statement allows us to execute a statement or group of statements multiple times.
+        types of loops:while for nested.
+        while loops:
+        while loops are known as indefinite or conditional loops.
+        they will keep iterating until certain conditions are met.
+
+53:19   for loop in python which repeats group of elements specified number of times.
+55:57   loop control statements change execution from its normal sequence.
+56:23   loops can be used in classes functions multiple other places as well.
+58:28   command line arguments pass arguments to python programs when they are executed.
+        arguments means certain values to it.
+        sys.argv is the list of command line arguments.
+        len(sys.argv) is the number of command line arguments.include file name also it calculates k.
+        first argument is filename itself and next what ever u supply arguments to output those are counted.
+1:10:53 File Object Attributes:
+        file.close()    file.mode()     file.name()         file.softspace()
+
+1:11:33 softspace() method return a boolean whether space character needs to be printed before another value
+        when using print statements.
+        File.seek()-->seek(offset,[,from]) changes the current file position
+        File.tell()-->tells u the current position within the file.
+
+1:13:50 SEQUENCES
+        sequences are containers with items that are accessible by indexing or slicing.
+        the built in length len function takes any container as an argument and returns the number of items
+        in the container
+
+1:14:21 Sequence Operations:
+        a)concatenation---gluing two things together.joining the sequences together create new sequence.
+        b)repitition-->
+        c)membership testing
+        d)slicing
+        e)indexing
+
+1:17:57     LISTS
+            if u have collection of data that does not need random access.      when to use
+            pop will delete an item by index not by actual value.
+            remove will delete an item by actual value.
+
+1:23:17     append vs extend
+            append is for single element but extend for when u have two lists and joined together.
+
+            insert
+            insert will place the value.not replace the value.
+
+1:26:08     TUPLE
+            a tuple is sequence of immutable python object. tuples are sequences just like lists.
+            where you have to deal with values which cannot be changed.         when to use
+             value of pi and list of countries u don't want to change.
+            we have constant set of values and have to iterate through them in tis case use tuple.
+
+1:30:13     STRINGS:
+            Slicing     Concatination   Updating    Repetition      Membership      Reverse
+1:34:01     most cases we use formatting purpose %d %s  %f
+            methods in string
+            capitalize,encode,count,max,min,replace,upper,index(throw error),find(does not throw error)
+
+
+1:37:13     SETS
+            it is unordered collection of unique items.
+            when we want to collect unique strings or ints from a sequence.(when to use sets)
+1:41:31     remove vs discard:
+            remove will throw an error but discard does not through an error.
+
+
+1:42:03     DICTIONARIES
+            it is unordered collection of key value pairs.
+            it is generally used when we have huge amount of data.
+
+1:49:22 59 FUNCTIONS AND LOOPS(BIG PART IT IS 20 MINUTES)
+          function is block of organised reusable code that is used to perform single and related action.
+          the intention should be doing one thing and one thing at a time only.
+1:52:23     the set of statements written once and executed multiple times.
+            once we define the function we call it multiple times.
+1:53:43     return terminates the execution of the function and also returns the output to calling function.
+            it not just returning a value it also return control to the main part of the function.
+
+1:57:50     BUILT IN FUNCTIONS
+            builtin functions are functions which are built into python and can be access by end users
+            sorted()    all()       any()  bool() chr() globals() enumerate()  reverse() open()   abs()
+
+1:59:19     except False,None,Zero      everything are True only k
+2:00:37     regards to bool False 0 None return False only. bool(0,None,False)=False
+2:04:07     Enumerate returns the list of tuples.
+            tuple consist of index values and items from the list.
+
+2:05:16     Lambda Functions.
+            u want to make functions more concise easy to write and read you can create lambda functions.
+            we can use lambda function when we require nameless function for short period of time.
+2:07:15     lambda uses in filter map reduce functions mostly.
+2:11:18     SCOPE OF VARIABLES
+            global--variables declared outside he function and can be used anywhere in the program
+            local --variables declared inside the function and can be used in inside the function only.
+
+             id will tell u the memory location of the variable.
+
+2:29:22     Attributes
+            class attributes are attributes which are owned by class itself.
+            They will be shared by all the instances of the class.
+            a)built in attributes
+            b)user defined attributes
+
+            Type of Attributes inside a class:
+2:35:53     private Attributes:can only be accessed inside of the class definition.
+            Public Attributes:attributes can and should be freely used.
+            Protected Attributes:attributes are only accessed from within the class and its subclasses.
+
+2:38:13 64  PRIVATE METHODS
+            when the attributes of an object can only be accessed inside the class it is called
+             Private.use __(double underscore) to hide a method
+             same for the variables also for private variables also.
+
+
+2:41:16     constructor and destructor
+            the constructor is implemented by using __init__(self) which u can define parameters
+            that follows he self
+            the destructor is defined using __del__(self)
+
+2:45:15 67 b Encapsulation:
+        combining the code into public interface and private implementation of that interface.
+
+2:48:14 Multiple Inheritance:
+        a single derived class inherited from multiple in the sense two or more than base classes.
+
+2:49:02 Multilevel Inheritance:
+        the derived class inherits from class which in turn inherits from some other class.
+
+2:51:05  POLYMORPHSIM
+
+        Polymorphism is the ability to leverage the same interface for different underlying forms such as
+        data types or classes.
+
+2:54:41 70 STANDARD LIBRARIES
+            standard library is collection of tools that come wit python.
+            it includes             Builtin Functions               Modules                 Packages
+
+            A module is file containing python definitions and statements.
+
+2:55:37     Import Statement
+            Use import  to tell the python to load a particular module.
+            when the interpreter encounters an import statement it imports the module
+
+
+2:56:11     Dir Function
+            a dir is built-in function which returns the list of strings containing the name defined by the module.
+            it gives the list of variables and functions defined in that module.
+            import math         print(dir(math))        or      from math import *   is also same.(not recommended both two)
+            op: __doc__,__file__, __loder__,fabs,factorial,floor,fmod,frexp,radians,sin,
+
+2:57:18     FROM IMPORT STATEMENT
+            from import statement allows you to import the specific attribute from the specific module into the current
+            namespace.
+
+            from math import sqrt(this is the recommended way)
+            the statement does not import the entire module it just import the required files in the module.
+
+
+
+2:59:39 75  RELOAD FUNCTION:
+            when the module is imported into script the code in the top level portion of module is executed only once.
+            therefore if u want to re execute the  top level code in module  you can use the reload function.
+            the reload function imports a previously imported module again.
+
+            import modules used in the python:
+            Sys         Os Os.path          Math        DateTime        Random      Json
+
+            sys module provides access to some variables used or maintained by the interpreter
+            and to function that interact strongly with the interpreter. It is always available
+
+            import sys
+            print(sys.argv)     stores any command line argument passed when you start python.also includes the name of program we
+                                are running.
+            print(sys.exit())   tells the python interpreter to quit.
+3:01:49     print(not sys)      returns False if module is imported,else True
+            print(sys.winver)   return the version number used to form registry keys on windows platforms.
+            print(sys.prefix)      will give u the path for virtual environment of the python was live in that path.
+                                    where the python is installed on our system.
+            Sys module is more important in case of interact with the operating system or interacting with the command line.
+            it is not much used in data science or web development purpose.when u r dealing with os then it is useful.
+
+
+3:03:13     OS MODULE
+            the os module includes code that lets python work with your operating system,they even run operating system
+            commands.
+            import os
+            print(os.getcwd())
+            print(os.chdir("d:/Python"))
+            print(os.mkdir("d:/Python/Py"))     it creates a directory in given path.
+            print(os.rmdir("d:/Python/Py"))      it deletes directory from given path.
+
+
+
+3:05:57 76  Os.Path Module:
+            print(os.path.join("/Users/adhypakas/PycharmProjects",'/Users/adhypakas'))
+            it takes one or more paths and joins them by using the current operating system's path separator.
+
+            print(os.path.abspath('/Users/adhypakas/PycharmProjects",'/Users/adhypakas''))
+            it takes the relative path name and returns the corresponding absolute path name.
+
+            print(os.path.normpath("/Users/adhypakas/PycharmProjects",'/Users/adhypakas'"))
+            it converts path names from nonstandard format to standard format)
+
+3:09:13     print(os.path.split())      it takes pathname and splits into two parts directory part and filename part
+            print(os.path.exists())     it takes path name and returns true if it is exists.
+            print(os.path.isdir())      it takes pathname and returns true if it points to a directory
+            print(os.walk())            os.walk() it will generate tuple of path folders files present in given path
+                                        and will keep traversing in the subfolders.
+
+
+3:11:39 76  MATH FUNCTIONS:
+            it provides access to the mathematical functions.
+
+
+3:14:12     RANDOM MODULE:
+            this module implements the pseudo random number generators for various distributions.
+
+
+3:16:08     random module use cases:
+            for encrypting u r banking session on the internet.
+            to randomly allow a new enemy spaceship to appear and shoot at u.
+
+
+3:17:12     DATETIME MODULE:
+            the datetime module includes tools for working with dates times and combinations.
+            the time module includes tools for working with times and dates in the recent past to the near future.
+
+
+3:18:03     JSON MODULE:
+            the json module provides an easy way to encode and decode data in json.
+            json is for storing the data.
+
+
+3:19:40     REGULAR EXPRESSIONS:
+            how to find a string in this large amount of data.
+            ho to verify email address in list of emails.
+            need to match for certain patterns or words and find the number of occurrences can be handled by regular expression.
+            Regular expression is a special text string for describing the search pattern.
+
+3:21:23     re module for regular expression:
+            1)sub method:
+            the replace method of string is used to replace all occurrences of one string with another
+            and index method is used to find the first occurrence of of substring in a string.
+
+ 3:25:46     for matching of the string at the beginning we use '^abc'
+             for matching  of the string at the ending we use $ 'abc$'
+
+3:26:20     SEARCH AND MATCH Function:
+            search will search the string in entire string
+            match will search the string at the beginning of the string only.
+
+
+3:27:38  PACKAGES:
+            package is a collection of python modules.logically combined together.
+            python packages allow u to break down large systems and organize their module in a consistent way
+            that you  and other people can use and reuse efficiently.
+
+3:28:23     EXCEPTION HANDLING:
+            an exception is signal occurs when an error or other usual condition has occurred.
+            Exceptions can be handled using try statement.
+            a critical operation which can raise exception is placed inside the try clause and the code that handles exception
+            is written in except clause.
+
+3:31:16     CATCHING SPECIFIC EXCEPTIONS:
+            a try clause can have any number of except clause to handle them differently but only one will be executed
+            in case an exception occurs.
+            we can use tuple of values to specify multiple exceptions in an except clause.
+
+3:33:21     FINALLY BLOCK:
+            the try statement in python can have an optional finally block.
+            this clause is executed no matter what,and is generally used to release external resources.
+
+3:34:27     USER DEFINED EXCEPTIONS:
+            programmers may name their own exceptions by creating a new exception class.
+            Exceptions need to be derived form the Exception class either directly or indirectly.
+
+6:24:46     WEB SCRAPPING:
+            web scrapping is technique employed to extract large amount of data from websites whereby data is extracted and saved
+             to local file in our computer or  a database.
+             text data or image data or collection of links
+
+6:26:03     LIBRARIES used for WEB SCRAPPING:
+            Beautiful soap
+            it is python library for pulling data out of HTML and XML files.
+            It provides simple way of navigating searching and modifying the HTML/XML parse tree.
+
+6:27:42     REQUEST LIBRARY IN PYTHON:
+            request library is used for sending and receiving info over HTTP.
+            downloading part of the web page can be done by requests library.
+
+6:29:02     Beautiful soap prettify() is used to print the HTML content in its tree structure.
+
+
+
+
+6:32:49 104 DATA VISUALIZATION IN THE WINDOW:
+            till now we are using matplotlib to visualise the data in the python window.
+            Bokeh is python interactive visualization library that targets web browsers for presentation
+            Bokeh is widely used as it allows building complex statistical plots quickly using simple commands.
+            install command like this for bokeh
+            pip install bkcharts
+            pip install bokeh
+
+6:36:11     HOW COMPUTER READS AN IMAGE:
+6:38:32     OPENCV
+            OpenCV python is library of python designed to solve computer vision problems.
+            all the opencv array structures are converted to and from NUMPY arrays.
+            image processing happening with opencv.
+6:39:17     Basic Operations with OpenCV:
+            read a image:
+            pip install opencv-python (in command line)
+            import cv2
+            python stores the image as Numpy array/matrix of numbers
+
+
+
+

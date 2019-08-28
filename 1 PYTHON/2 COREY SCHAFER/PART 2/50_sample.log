@@ -1,0 +1,16 @@
+ERROR:__main__:Tried to divided by zero
+ERROR:__main__:Tried to divided by zero
+Traceback (most recent call last):
+  File "F:\4 PYTHON\PRACTICE\2 COREY SCHAFER\50_Advance_logging.py", line 43, in divide
+    result = x / y
+ZeroDivisionError: division by zero
+ERROR:__main__:Tried to divided by zero
+Traceback (most recent call last):
+  File "F:\4 PYTHON\PRACTICE\2 COREY SCHAFER\50_Advance_logging.py", line 46, in divide
+    result = x / y
+ZeroDivisionError: division by zero
+ERROR:__main__:Tried to divided by zero
+Traceback (most recent call last):
+  File "F:\4 PYTHON\PRACTICE\2 COREY SCHAFER\50_Advance_logging.py", line 47, in divide
+    result = x / y
+ZeroDivisionError: division by zero

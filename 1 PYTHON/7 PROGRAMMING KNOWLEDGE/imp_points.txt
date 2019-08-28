@@ -1,0 +1,728 @@
+3:18  1 INTRODUCTION TO PYTHON
+        interpreted
+        interpreted languages must be parsed interpreted and executed each time the program is run thereby greatly
+        adding the cost of running the program.
+
+        compiled languages are run faster because compilation done before the execution.
+        interpreted languages are slower because compilation and execution takes place simultaneously.
+
+        python supports dynamic data types.
+        statically typed programming languages:do the type checking at the compile time as opposed to run time
+        dynamically typed programming languages:do type checking at runtime as opposed to compile time.
+
+        example u declare variable x=9 python do type checking at runtime whether it is integer or string or double value.
+
+12:30 2 he install python in customize location.
+
+21:08 3 BASIC MATHEMATICAL OPERATIONS:
+        expression--multiplication of two numbers,division of two numbers, subtraction of two numbers called like this
+        literals(when they are constants) are also called in operands(the number which u operate on) in expression operations
+        like 10,50,3,4  etc..
+
+30:32 4 PYTHON VARIABLES AND TYPES:
+        you don't need declare variables before using them.or u don't need declare the type of variable.
+        every variable in python is an object.
+        variables in python are case sensitive myAge is differ from Myage.
+        variable name cannot start with number or special characters like 10age or $age
+        Reserved words cannot be used as Variable names.(and del assert break else class except)
+39:12   type of the value which is stored in the particular variable.
+
+41:21 5 PRINT AND INPUT FUNCTIONS:
+            print is inbuilt function in python.("content",-->called passing string argument)
+
+50:36 6 BUILT IN FUNCTIONS AND BUILT IN MODULES:
+       %.2f indicates limits the number of digits  after the decimal point
+
+55:35  dir(__buitlins__)  it will give all builtin functions and types in python.
+
+58:03        built in modules which are available in python. math,
+
+1:10:24 7 CREATING AND EXECUTING FIRST PYTHON SCRIPT:
+            use quit() or exit() to quit from python in command prompt
+
+1:13:14 8  INSTALL PYCHARM ON WINDOWS:
+            for develop big project we need IDE(INTEGRATED DEVELOPMENT ENVIRONMENT) python IDLE not suit here.
+            Jetbrains is the creator of PYCHARM IDE.(some other webstorm intellij etc)
+
+1:24:47 9   PYTHON STRINGS AND COMMENTS:
+            escape character in python was back slash(\) 'Hello\'s world'
+1:26:10     \\(double backslash)---one back slash is escape character
+                                       another one is part of the string.
+
+1:30:31     strip means the spaces from the start and end will be strip from the string.
+
+1:36:19 10  BOOLEAN COMPARISION AND LOGICAL OPERATION:
+            in order to clear the python console right click and clear all it will clear the python console.
+
+1:48:39 11  IF ELSE STATEMENTS:
+            indentation in python is the way of marking block of code.
+2:00:20     Nested If statement explained here.
+
+2:04:05 13  LISTS(mutable)
+            list is ordered set of values. it is collection set of values put in single variable.
+            for deleting the items remove clear delete we use lists
+
+2:13:46 14  TUPLES(immutable)(another examples number string)
+            it is similar to lists .but tuples are immutable.
+            once tuples are created they cannot be changed. content in them cannot be changed.
+            u cannot change the content of tuple once it is initialised.
+
+2:20:34 15 SET(mutable)
+           it is unordered collection with no duplicate elements and no indexing.
+           each value in set is unique if u enter duplicate value it will be ignored k
+2:24:15    discard vs remove
+                u try to remove an element which is not there in the set then it will through exception---remove(keyerror)
+                .................................................does not throw any exception-------discard
+                clear() method it will give empty set.
+2:30:19         union(|),intersection(&). difference(-):
+                a difference of two sets contains all the elements that are in A but not in B. a-b k
+2:31:34         symmetric_difference(^) between two sets
+                contains all elements that are either in set a but not in set b or vice versa
+                symmetric difference result will be same for a^b or b^a
+2:32:56         sets are not support indexed or ordered.
+
+
+2:33:57 16  DICTIONARIES(mutable)
+                dicts are associative list or map.
+                dicts are list of pairs.dict is key value pairs.
+2:42:47         popitem() in dictionary
+                it remove the last key value pair which u have added or updated.
+                 
+
+2:43:04  17  PYTHON SLICE AND NEGATIVE INDEX
+                slice function is used with lists tuples and strings to slice something out of our collection.
+2:46:47         a[start:]   items start through the rest of the array.
+                a[:end]     items from the beginning through end-1
+                a[:]        a copy of the whole array.
+                a[start:end:step]   start through not past end by step.
+
+2:53:48 18  WHILE LOOP:
+                allows us to repeat over some block of code again and again until and unless some condition is met.
+
+3:03:54 19  FOR LOOP
+                used to iterate over sequence. sequence can be list tuple or dictionary or set or string.
+                in  operator is used in for loop.
+
+                 else statement can be used in loops for example while loop and for loop also.
+
+3:11:43 20   Python Break Continue Statement
+                break : break keyword used in loop in order to terminate the execution of loop immediately.
+
+
+3:18:33 21 FUNCTIONS
+                it is group of statements within program that performs a specific task.
+                a particular function does one task at a time.
+                1)builtin function-----         print    input       main
+                2)user defined function.
+
+3:24:00         if u mention return in the function,all the statements we write after the return will not be executed.k
+3:29:41         function makes ur code simpler.
+                function makes u r code reusable.
+                when u declare the functions u can test and debug u r code in a better way.
+
+3:38:28 33 INTRO TO OBJECT ORIENTED PROGRAMMING OOPS:
+                History
+                procedural programming languages:
+                C and Pascal are procedural programming languages or structural programming languages.
+
+                minus points:
+                --the unit in procedural programming language is function.
+                --it concentrate on creating functions.
+                --the data and functions are separate.
+
+3:43:10    Object Oriented Programming languages:
+                C++ Java Python Object Oriented Programming Languages.
+                class is blueprint in which we can have data and methods.
+                Object is single software unit that combines data and methods.
+                Data in an object are known as attributes.
+                procedures/functions in an object are known as methods.
+
+                plus points:
+                --the unit in procedural programming language is class.
+                --starts from isolating classes and then they can have data and methods inside it.
+                --data and methods are not separated  that are in the part of single object of class.
+
+
+3:50:23 24   CLASSES AND OBJECTS IN PYTHON:
+
+3:58:23 25   __init__ & __self__  in CLASS:
+               __init__ method serves as constructor for class(not exactly as constructor)
+               used to initialize some attributes or some functions.
+              this is the first method which will be called when u create instance of class.
+              how many objects u created for same class that many times the statement executed mention in the __init__ method.
+              for example in car class u create 3 instances for that 3 times print statement is called mention in the __init__
+              constructor method.
+              python does not have destructor like other languages Java C# because it has automatic garbage collection
+
+4:06:50      SELF Keyword
+            whenever u create class the first argument of the every method u need to provide the self keyword.
+            self is not  compulsory[whether u use any other word like abs] .
+            but it is convention to write self as first parameter.
+            self refers to the this is the current object.
+            so every method u create u need to give self keyword as the first argument  of your method inside class.
+4:09:50     init method is used to initialise u r attributes or whatever u want to initialize at the start of your class
+            u will do all those initializations in the init method.
+
+4:10:18 26  Possible to define Multiple Constructors in Python
+            if u don't pass self in init method and u create an instance of the class and run it gives error
+            init takes 0 positional arguments but 1 was given
+            because self is automatically passed when u initialize a class.so instance have by default self
+            but in your init method u remove self keyword.that's why it raise an error.
+4:11:45     can we create multiple  init methods inside  class?
+            no its not possible to create multiple init methods in your python class.
+            because class instance confuses from which init method  to initialise the attributes.
+            if u r provide multiple init methods in python class last init method will take main init method consideration
+            and the other will be overwritten.
+
+4:18:14 27  ENCAPSULATION
+            very important to protect our data and only give the access to our data to other users
+            encapsulation is important when u want to give u r code to some other people.
+            to encapsulate our code create functions.getter and setter based on this data will be evaluated.
+            k now we create getter and setter methods still other persons can get or data so what to do
+            make variable as private public protected modifiers like that.
+4:20:20     use __(double underscore) to make variable or attribute private
+            there is no keywords like private in python so use __. k
+4:24:20    _(single underscore) it is also private variable
+            but this is only convention noting stops you to change the value
+            of _b or accessing the value of _b.
+            if u truly want to make u r data private then use __  in front of u r variable.
+            when u use _ it is partially private variable and its only a convention.
+
+4:29:39 28 PRIVATE METHODS:
+            a private member variable is private to the class.
+            use the private member inside the class but u use it or access it outside the class it will give u an error
+            in has example like __c is private variable in the Hello class.outside class we cant use private variable.
+            private variable is invisible to the object.
+4:31:44     self is refers to current object.
+
+4:33:27     how to define private method inside te class?
+            same like variable use __ in front of the method name   (__private_method)
+            same like private variable cant access outside of the class applicable to private methods also.
+            then we can access private methods in side the class using example self.__provate_method
+
+4:35:48 29  INHERITANCE
+            classes in python can be extended creating new classes which can retain characteristics of the base class
+            this process is known as inheritance.
+             the idea behind the inheritance is borrow the behaviours and methods from the base class.
+             involves superclass and subclass.
+             subclass is the one who is doing borrowing of the members
+             superclass is the one from which subclasses borrows these kind of member methods and variables.
+
+4:39:30     coding example for inheritance.
+               None keyword is for assign nothing  to variables.
+
+4:46:35        you cannot inherit private members from super class to subclass.
+
+4:50:47 30      CREATE MODULES
+            import built in modules by using import keyword. for example math
+            builtin means this math module is already present in python.
+            module nothing but a python file.
+            ctrl+click on built in module it will take to that related file.k
+
+4:58:53     how to import files which have classes in them.
+            create seperate classes import modules    from polygon(filename) import Polygon(classname)
+
+
+5:03:16 31 MULTIPLE INHERITANCE:
+            the ability of class to inherit from more than on class is called multiple inheritance.
+            in python a class can inherit from more than one class.
+
+5:09:06 32  SUPER IN PYTHON OOPS:
+            parent class acts like super class
+            child class acts like sub class. which is inheriting from the parent class.
+            __init__ is the first function which is called when an instance of class is created.
+
+5:10:13     how to call parent init function in the child class instance.
+            it is possible by super function in python allows us to refer to the super class implicitly.
+            super is builtin function which returns proxy object that allows u to refer to your super class.
+
+5:11:48     METHOD RESOLUTION ORDER:
+            u can find mro by child class name.__mro__.
+            this is the order in which the methods are called inside u r child class  or the parent class.
+            there are some rules based upon which this order calculated
+            1)the method inside u r sub class are always called first and then  whatever the methods inside the base class
+            they will be called.
+            2)the order in which u inherit from the parent class or the super class.
+5:15:18     if u have multiple inheritance then u need to manually call these init function using the class name.
+
+
+5:16:15  33 PYTHON COMPOSITION:
+            what is composition and how to use composition between classes? in python.
+            we are delegate some responsibility from one class to the another class.
+            Salary class is content and Employee class is container ok.
+            whenever u delegate some responsibility of one class to another class is called composition.
+
+5:21:51 34  AGGREGATION VS COMPOSITION
+            how to use class aggregation between classes in python.
+            employee class delegating some part of its responsibility to salary class is called composition.
+            in composition the relationship between the classes which have some association is represented by
+             keyword part-of.
+             Salary is part of Employee.
+             keyword we have to use in composition is part-of.
+             lets see how to use aggregation instead od composition.
+5:25:23     Special properties of aggregation
+            1)has-A create a salary object and pass to employee k
+            2)the associated classes have unidirectional association
+            we are passing salary to employee only not reverse way k.
+            3)created salary and employee objects are independent one object dies and other one is lives.
+
+5:28:00     explains composition vs aggregation between two classes.() 3 differences are there
+            aggregation             composition
+            part-of                 has-a
+            dependent objects       independent objects
+                                    unidirectional
+
+5:28:54 35 ABSTRACT CLASSES:
+            1)restrict the creation of instance of parent class in child class.
+            2)must implement the parent class abstract methods in child class.
+            on fact python does not provide any abstract class.
+            there is builtin module to create abstract class in python
+
+5:31:11     from abc import ABC,abstractmethod
+            abs ---abstract base classes an this allows to create the abstract classes.
+            abstractmethod makes the methods as abstract in the sense which u must implement the methods in the sub class.
+            if u have only one abstract method in class even it is called abstract class only.
+
+5:37:16 36  EXCEPTION HANDLING
+            an exception is event that occurs during execution of program
+            that disrupts the normal flow of program.
+5:40:55    to know the builtin errors in python
+            import builtins
+            help(builtins)
+
+5:48:11    in except block if u mention like this   except Exception as e:
+            it will give details about error details.
+
+5:52:33 37  TRY EXCEPT ELSE FINALLY:
+            whenever u r code through an exception else block will  not be executed.
+            else block will execute only if exception not occurs.
+            but finally block will execute in both cases. in exception case and in else case also.
+            finally block executes whether in both cases in exception and not exception cases.
+
+            finally block is used for closing the files in case of already open files.
+            database connection purpose when connection was lost connect again.
+
+5:57:02      we cannot use else statement without except statement
+            if u use else statement there could be a exception statement.
+
+            we ue only try and finally combination also.
+
+5:57:47 38  RAISING EXCEPTIONS
+            how to raise an exception?
+            raise statement or keyword allows the programmer to force a specific exception to occur.
+
+6:03:50 39 Raising Custom Exceptions:
+            create your own class and inherit from base Exception class.
+
+6:08:30 40 Name Main:
+6:11:46 __name__ is special builtin keyword in python
+        __name__ value is equal to module name or __main__
+
+
+6:15:38 41  CREATE TEXT FILE
+            use open() function to open the file.
+            the open () function takes two arguments filename(path of the file with the exact name) and mode
+
+            r   read            default value.open file just for reading.throws error if file does not exist.
+            r+  read+write      open the file both reading and writing
+            w   write           open file for writing create file if does not exist.overwrites the file if exists
+            w+  write+read    opens the file both reading and writing. ..... same as above w
+            a   append          open file for appending
+            b   binary          binary mode eg(images)
+
+            open function returns a file object into variable.generally file object is called file handler.
+            using with file handler we can work with file  on which we are working on.
+            use close function after handling of u r file it is good practice u know.
+6:20:20     if u want to provide the line breaks use (backslash)\n
+
+6:25:19     finally block is always called in case exception is thrown by this code or if exception is not thrown.
+
+6:26:14     context manager concept with keyword we have to use advantage is no need to close the file
+             context manager will take care of closing the file.
+6:27:38     create file in some folder instead of creating in existing project.
+            in windows we have to provide the  \\  for file path k
+
+6:28:50 42 READING FILES IN PYTHON
+            u have to give the exact file name to read the file. otherwise it will throw an error.
+            use readline if u want to read the entire line in the existing file.
+
+6:36:44   read and do some operation in file
+          len function is used to count the number of characters in every line.
+          count the number of words in every line then we use function on variable split function. split(" ")
+
+6:40:13 43 WORKING WITH JSON DATA
+            JSON it is text format javascript object notation.
+            and json is syntax which is used for storing and exchanging the data.
+            to use json in python import built in json package.
+            json.dumps() method is used to  convert some python dictionary values to json values.
+6:42:36     what are the arguments(collection and data types) pass to the dumps function apart from dictionary.
+            list tuple int float boolean except sets argument u can provide any argument as a data type to the dump method
+
+
+6:44:41     dump it will also take  few other parameters like indent=4
+            then the output will be in pretty printed format like indented format 4 spaces
+            separators parameters will replace the comma(,) with . and : with = notation.
+
+6:47:17     save the json values in json file.
+6:49:54      in reading file operation fh.read() gave the string value check with type if u have doubt.
+            in order to convert the string into some parsable format use json.loads
+            loads function takes string and convert into json value.
+
+6:51:53     json.loads() function use to convert from json or string value to python dictionary.
+
+6:52:00 44 PYTHON ITERATORS:
+            at last we will know how to create custom iterator in python.
+            to know iterator first we have to know iteration.
+            an act of going over a collection is called iteration.
+            [collections----- lists tuples dictionaries sets and other kind of collections]
+            till now we use for loop to iterate over a collection.
+
+6:53:43     Iterator is an object which can be used to iterate over a collection.
+            it has two special methods  __iter__() and _next__()
+            __iter__()--    method to get the iterator
+            __next__()--     method give the next value based on iter method
+            collections like dicts tuple lists are all iteratable collections.we can iterate over them.
+            all the collections objects have special method called __iter__()
+            which is used to get the iterator from these collection.
+
+            all the collections(lists,tuples) have this __iter__() method and we can call this __iter__() method
+             to get the object of the iterator.
+            we can call this __iter__() method using special method called iter without leading and trailing slashes.
+6:55:42     iter method is used to get the iterator.
+            when iterator stops iteration means exhausted, it gives stop iteration exception.
+            collections like list tuple dict have iterable object that means we can use for loop to iterate over collections.
+
+6:57:56     for loop uses same iterator mechanism to iterate over all these elements of the collection
+
+6:58:10     how to create custom iterator class?
+            iterator always have these two special methods __iter__() and __next__().
+            in order to create your own iterator class you need to implement the above methods.
+
+7:06:19 45 PYTHON GENERATORS:
+           generators are simple way of creating iterators.
+            simply put generator as function that returns an iterator object on which we can iterate upon.
+            in function we use yield instead of return (for getting the values one by one)
+            if function contains at least one yield keyword then it is generator function.
+            when use generator it returns an iterator object.
+7:07:42     in function yield vs return:
+            in case of return the statement is immediately terminated entirely.
+            after return we cant do anything inside function.
+            yield statement pauses the function and saving the state of that function.
+            in code example my_func() generator returns an iterator object.which we are saving in x variable.
+            and the x variable which is iterator object as an argument of next function.which is going to give u first
+            yield keyword.
+
+7:09:33     so its like using iterator on which you can use the next function but its much simpler with yield.
+            u just need to use yield keyword instead of implementing iter and next method inside the class in last video.
+            how many yield statements in your function that many print statements u have to use.
+            beyond that it will give stop iteration exception.
+            generators are similar to iterators but they are more simple to use and create.
+7:10:30     Iterators VS Generators:
+             in order to create an iterators class we need to implement iter and next methods.sometime count intuitive.
+             in case of generator the iter and next methods are automatically implemented.
+             the generator function will return the iterator object on which we can iterate upon.
+             role of yield keyword?
+             whatever value u write after the yield keyword its going to return that value and immediately after that
+             its going to save the status of your function.
+7:14:18     basically your yield keyword saving the status after it returns the value associated with it.
+            and it resumes the status whenever u use the next function.
+            how to use yield keyword with for loop.
+
+7:17:37     create list_iterator function:
+            when u create a generator no need to create the iter and next methods and no need to create a exception it will
+            automatically generated by generator u have to implement these in case of creating an iterator.
+
+7:20:45     Discuss about Advantages of Generators:
+            generators are easy to implement.
+            generators are more efficient if u want perform same logic with the normal function.
+            they are memory efficient.storing the value one by one at a time.it does not store the values at a time.
+            for example streaming video purpose u dont know the length of the video.
+            then in those cases generators are much efficient because they will work up on in streams in steps.
+            not going to wait for stream to come entirely and then work up on it.
+            so generators re good to work with streams also.
+
+7:22:13 46 COMMAND LINE ARGUMENTS
+            how to pass command line arguments to your python script?
+            we need to import argparse buitlin module.
+            we can parse the parameters which is passed using the command line to this script.
+             ArgumentParser class from argparse module we have to use.
+             1)initialize the parser.
+             2)add the parameters positional/optional.
+             3)parse the arguments.
+
+            use help parameter that is -h    python filename.py -h
+
+7:26:49    how to pass the command line arguments?
+            we can pass two kinds of arguments as the command line arguments.
+            1)positional        2)optional arguments
+            how to pass positional arguments?
+            by using method called add argument and two parameters we have to pass in the method.
+7:35:07     dont change the position of the arguments like + 20 40 it will through an error.
+            even if u provide default value in parameters list its not work because it is positional
+
+            thats why optional arguments coming into picture.
+            how to pass optional arguments now to command line arguments?
+
+            we have to provide optional parameters by adding -- infront of parameters in the add arguments list
+            python filename.py --num1 40 --num2 50 --operation (+,-,*,/)
+
+            u will change the positions here because it is optional u mention in the  command line argument like --num1
+            value will be parsed using the name variable not by the position.
+
+            short form also u can mention for parameeters like alias u can assume for numbers 1 and 2
+            python filename.py -a 40 -b 50 -c (+,-,*,/) or
+            python filename.py -a=40 -b=50 -c=(+,-,*,/)
+
+7:40:26 47  FILTER MAP REDUCE FUNCTIONS IN FUNCTIONAL PROGRAMMING:
+            python is multi paradigm(meaning rupavali) language and also supports functional programming languages.
+            lambda functions falls into functional programming paradigm.
+            lambda functions are also called anonymous functions.because they dont have any name.
+            sometimes they are also called one line function.
+            because they can be written in single line of code.
+
+7:46:00     why we use lambda function?
+            lambda functions are generally used with the functions which takes function as the arguments.
+            or return function as the result.
+            so in functional programming functions are first class citizens.
+            that means we can pass the functions as normal arguments.
+            in code example we pass static or constant value but in general we pass function as argument also.
+            and in addition we can also return function from function.
+            instead of multiplication we can create function and return from function.
+            in this way lambda functions are useful.
+            examples where we used lambda functions.
+            we can used lambda functions with filter map reduce functions
+
+7:48:43     in map function it will take another lambda function as argument(to double the number) and iterable variable
+            as the second value.
+
+7:58:54 48 CLOSURES AND NESTED FUNCTIONS:
+            Nested function:
+            define function inside a function.
+            in code example outer function is enclosing function and inner function is local function of the outer function.
+            when u declare one function inside other function is called nesting of function.
+8:02:51    CLOSURES:
+            convert nested function into closure in code example
+            return the inner function with out paranthesis means like this return inner_function ok got it.
+            a closure is a function whose return value depends upon the value of one or more variable which are declared
+            outside the function.
+            closure have special property that closure function object remembers the value in the enclosing scope even
+            if they are not present in the memory.
+            closure will store some kind of state of inner function even if outer function is deleted.
+            that is magic of closures.
+8:11:27     1)classes are able to remember the state of the variables and methods which are declared inside the classes.
+            so closures are sometime used inplace of the classes which only have usually one method inside them.
+            2)closures are also used heavily in case of decorators in python.
+            why decorators use closures and how decorators use closures we will see in next video.
+            3)closures are more efficient sometimes  than the normal functions. used for code efficiency & faster working of code
+            
+
+8:12:37 49 DECORATORS:
+                what are decorators and how to use decorators?
+                decorator wraps the function and modify its behaviour in one way or the another
+                without having to directly change the source code of the function being decorated.
+                we can return function from function or we can pass the function as an argument of another function.
+                in case of closures we have seen that we can return the inner function without ()paranthesis.
+               that makes them closures.
+8:27:11         how to write a generic function?
+
+
+8:32:25 50  OPERATOR OVERLOADING
+            everything is an object in python.
+8:35:03     can we overload operators by our custom classes?
+8:38:03     how to overload an operator in python?
+            in order to overload particular operator need to implement associated class
+            different operator overloading methods are available
+            math operator   bitwise operator        comparision operator    overloading     etc...
+            implement add method operator for this code example  __add__()
+            it takes two arguments.
+            one is self and another one is object of the other instance(object of the circle class).
+           in implementing add method
+           adding the radius of two objects. one is circle object radius and second one is current class.
+
+8:44:09     implement less than and greater than operator overload methods in class now.
+            __lt__  and __gt__
+
+
+8:49:06 51  INTRO TO PYTHON DEBUGGING:
+            it is command line tool pdb(python debugger)
+            which we use to debug our python script.
+            and it is installed whenever u installed python on ur system.
+            no need to install pdb separately when u installed python already.
+            why using pdb if already have the pycharm IDE and debug code with the help of pycharm IDE.
+            now in real life situations most probably  u run python script on some kind of server.
+            now generally on these servers u dont have the luxury of using of an IDE.
+            u will have to use the terminal in order to debug the python script.
+            and that's why he wanted to show us how to debug python script using command line tool pdb.
+8:51:03     using windows command line terminal or pycharm terminal use for pdb k.
+
+
+8:53:11     how to debug python code through command line
+first way:
+            python -m pdb filename(51_pdb_debugger.py)
+            after that u have to enter help or h for debug help commands:most frequently used commands these are:
+            1)next      or  n
+            2)step      or  s
+            3)continue  or  c
+
+            help next
+
+            to know about the pdb position in command line use
+
+            where or w     ok
+
+            if u dont give any command in pdb like n or s or c it will take previous command automatically
+
+8:58:33     print function is used in pdb to print the current variable.
+
+            to know the variable type  or function information we have to give command like this
+
+            whatis x(variable name)
+
+            for step into the function we use step or s command.
+9:01:54     what is breakpoint?
+            when u set a breakpoint at some line the program is going to stop exactly at that line.
+            break command u used for the set to breakpoint.
+
+9:04:06     use quit or q to came out from pdb debugger.
+
+9:05:26     there are few more ways to use pdb with our python script.
+            other ways to use pdb command tool with python script.
+2nd way:
+            import pdb in your script file directly.
+            pdb.set_trace()   for set breakpoint in your python script.
+            and run file using python filename.py ok.
+3rd way:
+            import pdb;pdb.set_race()   in between code directly.
+            some people use import pdb directly in the code point where they want to set the breakpoint.
+            benefit of this if u r using any linting tool it is going to warn u on the same line.
+            the developer will know to remove the exact line.
+
+4th way
+            use pdb command tool through python shell also k.
+            open terminal       ---python---
+            import filename
+            import pdb
+            pdb.run("filename.main()")
+
+
+9:10:00 52 PYCHARM TO DEBUG THE PYTHON CODE:
+            if u miss the terminal in pycharm right click in project and u find open in terminal.
+            if u click debug then u get output in two flavours
+            debugger and console.
+            in order to debug the python script we need to set the break point at which the execution of program will
+            stop and we will go step by step after this point
+            red circle indicates the we set breakpoint in code k.
+9:13:00     step over f8---to step over your code
+            step into f7---to step inside your function or class on which u r currently on.
+                            if u r code contains some builtin functions then it will go inside of that
+            step into my code(alt+shift+f7):
+                to step inside your function or class on which u r currently on.
+                            if u r code contains some builtin functions then it does not go skip the builtin function code.
+            force step into (alt+shift+f7):
+             step out(shift+8):
+
+9:18:16 53  PIP AND PYPI FOR MANAGING PYTHON PACKAGES:
+            PIP is a command line tool for installing and managing python packages which are generally found in
+            special index called Python Package Index.
+            for more info refer this ---[pypi.org]
+
+            (PYPI-Python Package Index)
+            it is repository of software for the python programming language.
+9:19:53     how to use python pip using command line:
+            when u installed pyton on any os pip automatically installed simultaneously.
+            to check the pip version
+            pip --version
+
+            for help on pip tool
+            pip --help
+
+            clear the command prompt window by cls command
+            pip search Flask            it will give info about flask package.
+            pip install Flask
+
+            to know more about the package
+            pip show Flask
+
+9:24:51     in order to list out all the packages which are installed on our system
+            pip list
+
+            to uninstall the package use
+            pip uninstall (package name)
+
+9:25:55 54  INSTALL PIP PACKAGES USING PYCHARM:
+            through pycharm
+            settings---choose project---project interpreter---click + button----search for package(opencv-python)
+
+
+9:30:58 55  GLOBAL LOCAL NONLOCAL VARIABLES:
+            it follows LEGB rule(LOCAL ENCLOSED GLOBAL BUILTIN)
+            1)the variable first check  within function  or
+            2)next within enclosed function                  or
+            3)next outside the function means globally outside the function
+            4)next Builtin functions
+
+            local value have more priority than the global value.
+
+9:38:43     NON LOCAL VARIABLES:
+            non local variables behaves almost similar to global variables.but they have some differences.
+
+#       non local variable bindings we can only do inside the nested functions.
+#       generally we use non local variables inside the nested functions.
+#       we cannot use the nonlocal keyword instead of the global keyword.
+#       lets see how to use the non local keyword inside the nested function?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

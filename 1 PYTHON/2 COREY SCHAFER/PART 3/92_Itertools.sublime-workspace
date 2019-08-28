@@ -1,0 +1,238 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/G/4 PYTHON/PRACTICE/1 PYTHON/enumerate.py",
+		"/G/4 PYTHON/PRACTICE/1 PYTHON/hi",
+		"/G/4 PYTHON/PRACTICE/1 PYTHON/temp.py",
+		"/C/Users/Lenovo/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/G/4 PYTHON/PRACTICE/3 DJANGO/django_project/django_project/wsgi.py",
+		"/C/Users/Lenovo/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/G/4 PYTHON/PRACTICE/3 DJANGO/django_project/manage.py",
+		"/G/4 PYTHON/PRACTICE/3 DJANGO/django_project/users/views.py",
+		"/G/4 PYTHON/PRACTICE/3 DJANGO/django_project/users/signals.py",
+		"/G/4 PYTHON/PRACTICE/3 DJANGO/django_project/users/models.py",
+		"/G/4 PYTHON/PRACTICE/3 DJANGO/django_project/users/forms.py",
+		"/G/4 PYTHON/PRACTICE/3 DJANGO/django_project/users/apps.py",
+		"/G/4 PYTHON/PRACTICE/3 DJANGO/django_project/users/admin.py",
+		"/G/4 PYTHON/PRACTICE/3 DJANGO/django_project/users/templates/users/register.html",
+		"/G/4 PYTHON/PRACTICE/3 DJANGO/django_project/users/templates/users/profile.html",
+		"/G/4 PYTHON/PRACTICE/3 DJANGO/django_project/users/templates/users/password_reset_done.html",
+		"/G/4 PYTHON/PRACTICE/3 DJANGO/django_project/users/templates/users/password_reset_confirm.html",
+		"/G/4 PYTHON/PRACTICE/3 DJANGO/django_project/users/templates/users/password_reset_complete.html",
+		"/G/4 PYTHON/PRACTICE/3 DJANGO/django_project/users/templates/users/password_reset.html",
+		"/G/4 PYTHON/PRACTICE/3 DJANGO/django_project/users/templates/users/logout.html",
+		"/G/4 PYTHON/PRACTICE/3 DJANGO/django_project/users/templates/users/login.html",
+		"/G/4 PYTHON/PRACTICE/3 DJANGO/django_project/users/migrations/__init__.py",
+		"/G/4 PYTHON/PRACTICE/3 DJANGO/django_project/users/migrations/0001_initial.py",
+		"/G/4 PYTHON/PRACTICE/3 DJANGO/django_project/django_project/urls.py",
+		"/G/4 PYTHON/PRACTICE/3 DJANGO/django_project/django_project/settings.py",
+		"/G/4 PYTHON/PRACTICE/3 DJANGO/django_project/blog/views.py",
+		"/G/4 PYTHON/PRACTICE/3 DJANGO/django_project/blog/urls.py",
+		"/G/4 PYTHON/PRACTICE/3 DJANGO/django_project/blog/tests.py",
+		"/G/4 PYTHON/PRACTICE/3 DJANGO/django_project/blog/models.py",
+		"/G/4 PYTHON/PRACTICE/3 DJANGO/django_project/blog/apps.py",
+		"/G/4 PYTHON/PRACTICE/3 DJANGO/django_project/blog/admin.py",
+		"/G/4 PYTHON/PRACTICE/3 DJANGO/django_project/blog/__init__.py",
+		"/G/4 PYTHON/PRACTICE/3 DJANGO/django_project/blog/templates/blog/user_posts.html",
+		"/G/4 PYTHON/PRACTICE/3 DJANGO/django_project/blog/templates/blog/post_form.html",
+		"/G/4 PYTHON/PRACTICE/3 DJANGO/django_project/blog/templates/blog/post_detail.html",
+		"/G/4 PYTHON/PRACTICE/3 DJANGO/django_project/blog/templates/blog/post_confirm_delete.html",
+		"/G/4 PYTHON/PRACTICE/3 DJANGO/django_project/blog/templates/blog/home.html",
+		"/G/4 PYTHON/PRACTICE/3 DJANGO/django_project/blog/templates/blog/base.html",
+		"/G/4 PYTHON/PRACTICE/3 DJANGO/django_project/blog/templates/blog/about.html",
+		"/G/4 PYTHON/PRACTICE/3 DJANGO/django_project/blog/migrations/0001_initial.py",
+		"/G/4 PYTHON/PRACTICE/3 DJANGO/django_project/blog/static/blog/main.css",
+		"/G/4 PYTHON/PRACTICE/2 FLASK/Flask_Blog/flaskblog/models.py",
+		"/G/4 PYTHON/PRACTICE/2 FLASK/Flask_Blog/flaskblog/__init__.py",
+		"/G/4 PYTHON/PRACTICE/2 FLASK/Flask_Blog/flaskblog/templates/errors/500.html",
+		"/G/4 PYTHON/PRACTICE/2 FLASK/Flask_Blog/flaskblog/templates/errors/403.html",
+		"/G/4 PYTHON/PRACTICE/2 FLASK/Flask_Blog/flaskblog/templates/errors/404.html",
+		"/G/4 PYTHON/PRACTICE/2 FLASK/Flask_Blog/flaskblog/templates/403.html",
+		"/G/4 PYTHON/PRACTICE/2 FLASK/Flask_Blog/flaskblog/errors/handlers.py",
+		"/G/4 PYTHON/PRACTICE/2 FLASK/Flask_Blog/flaskblog/errors/__init__.py",
+		"/G/4 PYTHON/PRACTICE/2 FLASK/Flask_Blog/flaskblog/config.py",
+		"/G/4 PYTHON/PRACTICE/2 FLASK/Flask_Blog/flaskblog/users/forms.py",
+		"/G/4 PYTHON/PRACTICE/2 FLASK/Flask_Blog/flaskblog/users/utils.py",
+		"/G/4 PYTHON/PRACTICE/2 FLASK/Flask_Blog/flaskblog/users/routes.py",
+		"/G/4 PYTHON/PRACTICE/2 FLASK/Flask_Blog/flaskblog/templates/user_posts.html",
+		"/G/4 PYTHON/PRACTICE/2 FLASK/Flask_Blog/flaskblog/templates/reset_token.html",
+		"/G/4 PYTHON/PRACTICE/2 FLASK/Flask_Blog/flaskblog/templates/reset_request.html",
+		"/G/4 PYTHON/PRACTICE/2 FLASK/Flask_Blog/flaskblog/templates/register.html",
+		"/G/4 PYTHON/PRACTICE/2 FLASK/Flask_Blog/flaskblog/templates/post.html",
+		"/G/4 PYTHON/PRACTICE/2 FLASK/Flask_Blog/flaskblog/templates/login.html",
+		"/G/4 PYTHON/PRACTICE/2 FLASK/Flask_Blog/flaskblog/templates/layout.html",
+		"/G/4 PYTHON/PRACTICE/2 FLASK/Flask_Blog/flaskblog/templates/home.html",
+		"/G/4 PYTHON/PRACTICE/2 FLASK/Flask_Blog/flaskblog/templates/create_post.html",
+		"/G/4 PYTHON/PRACTICE/2 FLASK/Flask_Blog/flaskblog/templates/account.html",
+		"/G/4 PYTHON/PRACTICE/2 FLASK/Flask_Blog/flaskblog/templates/about.html",
+		"/G/4 PYTHON/PRACTICE/2 FLASK/Flask_Blog/flaskblog/posts/forms.py",
+		"/G/4 PYTHON/PRACTICE/2 FLASK/Flask_Blog/flaskblog/posts/routes.py",
+		"/G/4 PYTHON/PRACTICE/2 FLASK/Flask_Blog/run.py",
+		"/G/4 PYTHON/PRACTICE/2 FLASK/Flask_Blog/flaskblog/main/routes.py",
+		"/G/4 PYTHON/PRACTICE/2 FLASK/Flask_Blog/flaskblog/static/main.css",
+		"/G/4 PYTHON/PRACTICE/2 FLASK/Flask_Blog/flaskblog/static/profile_pics/default.jpg",
+		"/G/4 PYTHON/PRACTICE/2 FLASK/Flask_Blog/flaskblog/site.db",
+		"/G/4 PYTHON/PRACTICE/1 PYTHON/3 TELUSKO/10_data_types.py",
+		"/G/4 PYTHON/PRACTICE/1 PYTHON/3 TELUSKO/12_operators.py",
+		"/G/4 PYTHON/PRACTICE/1 PYTHON/3 TELUSKO/18_add.py"
+	],
+	"find":
+	{
+		"height": 28.0
+	},
+	"find_in_files":
+	{
+		"height": 101.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 39.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "92_Itertools.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 262.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

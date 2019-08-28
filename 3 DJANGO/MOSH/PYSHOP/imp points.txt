@@ -1,0 +1,395 @@
+					https://www.youtube.com/watch?v=_uQrJ0TkZlc
+
+DJANGO FRAMEWORK(4:59:34)
+
+its a web framework for perfectionists with deadlines.
+so if we r perfectionist and you want to quickly put together a website that is fast scalable and secure django is your best friend.
+
+Instagram,Spotify,YouTube,Washington Post, are build by DJango.
+
+what is framework why do we need framework to build a web application or websiste?
+framework is essentially a library of reusable modules.
+these modules provide functionality for common tasks such as we have modules to work with http requests,
+urls, sessions cookies and so on.
+
+these are the concerns of the every web application or web site out there.
+so all this functionality is baked into django we dont have to code from scratch thats why we use framework like DJANGO.
+Now technically framework is more than library.
+
+
+a FRAMEWORK defines a structure for our applications.
+apart from providing these modules it also provides a structure for each application
+
+It tells us what folders or files we should have in our project.
+so this consistancy provides consistancy among various django projects.
+
+
+5:01:02(project starts)             2       YOUR FIRST APP   	   5:05:43
+
+in python terminal 		pip install django==2.1		(telling pip to install django version 2.1 fro newer version)
+
+next create django project(cntrl+l to clean the terminal window)
+when u installed django it brings command line utility called django admin (utility or program that we can execute from command line or terminal)
+use command utility django admin k takes arguments(startproject) pyshop in the current folder.
+(. imported here  means in currrent folder if u dont add this period this utility is going to create an extra folder.looks a little bit repititive.)
+
+				            django-admin startproject pyshop .
+
+in pyshop folder we have 
+__init__.py means pyshop folder is package.so we can import various modules of this package into other modules.
+settings.py means we define various settings for our application. 
+urls.py	    means url mapped to application. about/contact/products/shopping cart
+            root or parent url module in our django project.
+
+
+wsgi.py     means web server gateway interface a standard interface between applications built with django and web servers.
+
+manage.py  means manage the django project.we can start web server we can work with database 
+
+now go to python terminal (if u r on windows enter python if u r in mac enter python3 because mac comes with bydefault python2 k)
+ 
+				                 python manage.py runserver
+(with python interpretor we are running this program manage.py and pass as argument runserver it contains some python code use this module to manage django project)
+
+# Your First App
+
+the django project contains multiple applications.
+imagine we are build a website or web application like amazon it is big website.
+divide project into small functional areas like
+example product management order management customer management are like different functional areas.
+we divide django project into multiple django apps.
+each app is focus on one functional area.
+
+(5:06:48)
+how to add new app to exisitng project to manage the products in imaginary shop.
+apps we can reuse them in different django projects.
+each app is essentially python package.
+
+(5:07:38)                python manage.py startapp products
+
+in producs app we have these modules
+
+__init__.py so products app is package k got it.we can take this package and reuse it in another django app.
+            or more specifically django project.
+            we can also publish this package to pypi for other people to reuse in their django project.
+
+admin.py    this is useful for define how the administrative panel app will look like.
+apps.py     we use this module to store various configuraion settings for this app.
+models.py   we define classes or new types for modelling the concept in this app in this domain.
+            in the domain of products probably have concepts like product category review and so on.
+
+tests.py    we write automated tests for this app.
+views.py    we define what should the user see when they navigate to certain page.
+
+
+                3               View Function           5:09:30
+
+how to create firsr view or view function in django.
+view function is function that gets called by django when the user navigate to particular page.
+
+from django.shortcuts import render
+(django is package shortcuts is module and importing render function.)
+
+by convention we use the word index for the main page of an app.
+all are view functions should always take a parameter and that is the http request passed to index function.
+
+when we navigate to /products our browser sends an http request to our web server.
+django takes this request and send it to view function with the request object we can find info aboout the client.
+and we just wanna return some plain text to the browser.like hello world
+
+
+		 4		 URL   MAPPING                 (5:12:42)
+
+right click on products project and create new file urls.py
+naming convention is very important here for naming the module that is urls.py
+the django framework define convention for structure our project.
+
+in urls.py we define variable by convention that is called
+
+urlpatterns         (spell it exactly django convention it is all characters are lower in case)
+set this to list object.in this list   we map various urls to their view functions.
+to Rereference the URL we need to import the path function.
+
+from django.urls import path(5:14:10)
+
+we can map url to view function.
+so we call the path function the first argument is string that specifies our url endpoint.
+here he pass an empty string with no characters in it.
+and this represents the root of the products app.
+second argument to path function is to specify  our view function.we dont pass the function just reference the function.
+the view function we defined inside of the views.py module
+import view module into url module for get the reference of function purpose.
+
+from . import views                     .period means the current folder.
+
+why dont we import like this(import views) instead of from . import views
+because  the reason for this view is generic name so it is possible that project has a dependency
+to another library called views.
+with tis syntax python will end up import that module instead of the  views module in the current folder.
+because that will take priority.
+because of this reason we use from . import views instead of import views k got it.
+
+add the project pyshop urls place also in urls.py k then it recognises the app route
+
+from django.urls import path,include
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('products/',include('products.urls')),         like this
+
+first define url in the app urls.py and next in project urls.py for the first time only
+for the proh=ject urls.py next time onwards concentrate on app urls.py only.
+
+when we create a new app to the project that time we add new url to projetc urls.py
+otherwise no need to add any thing to projetc urls.py k got it
+
+follow pep8 coding standards to format our code.
+
+
+
+
+			#           5       MODELS  		(5:22:28)
+
+how to create  models in this django project.
+
+model is representation of real world concept.
+in online shop we have  models like order customer shopping cart product review and so on.
+in products app in models.py file wew create class Product.
+
+Inherit the Product class from model class in django
+
+in modules module we have class Model this class defines all the common charaters and the behaviour from models
+in django application.
+
+max_length for urls in image url is 2083.  standard
+
+5:25:59
+how to use the model to create a database table or storing products.
+
+			#           6       MIGRATIONS		      5:26:04
+
+db.sqlite3 is empty database file that django creates.
+and used to store our data.
+sqlite is kind of database and it is simpliest for small applications.
+not suitable for enterprise large web applications.
+for large enterprise web applications we use sql server,mysql,oracle,postgres and so on.
+django supports all of these database engines.
+
+goolge-->DB Browser for SQLite https://sqlitebrowser.org
+5:27:15
+
+to create database table from our Product Class in our models.py file
+
+open terminal in pycharm
+and enter           python manage.py makemigrations
+
+no changes detected because django bydefault does not know our product model to solve this do below step
+
+open pyshop project settings file
+
+INSTALLED-APPS=[] in this register our products app.
+'products.apps.ProductsConfig'
+  (app) (module) (class)
+
+now run the command again
+                    python manage.py makemigrations
+now u get Migrations for 'products'  means table created.
+
+he explained 0001_initial.py file   5:31:02
+
+but DB browser database still dont have tables for that we need to run one command
+
+run migration to generate our product table.
+        python manage.py makemigrate                first
+        python manage.py migrate                    second
+
+now in DB browser database the sqlite3 file contains 12 tables.
+each table is prefix with app it belongs to.    auth_permission  auth_user etc.
+
+Excersize for creating a another table for Offer class    5:36:00
+
+create Offer class in models.py file
+
+and in terminal run these commands.
+
+python manage.py makemigrations
+python manage.py migrate                it will create offer table in database.
+
+
+		#       7           ADMIN           5:37:03
+
+discuss about admin panel of the django project.
+
+admin route is for login into our admin panel section
+http://127.0.0.1:8000/admin/login/?next=/admin/
+it is autogenerated by django team.
+how to work with admin panel.
+ in pycharm we crate first user of the application called superuser.
+
+ python manage.py createsuperuser
+
+ username   admin
+ email      rajeshsvv01@gmail.com
+ password   12345(this is simple password django cant accept it but for simple case we can bypasss our password)
+
+enter these credentials in login admin page.
+he explained admin page k   5:38:40
+
+in pyshop setting file-->installed apps-->
+by one line of code we can manage [roducts along with users and groups in admin panel home page k 5:39:42
+
+products app--->admin.py module we register the model that we need to manage in the admin section.
+first need to import our product model.     from .models import Product
+                                            admin.site.register(Product)
+                                              |     |       |       |
+                                            object attrbute method class
+
+now Product will appear in admin panel.
+then add some fields name proce stock and image url
+for image url       google->orange->image->tools->usage rights->labeled for reuse(we dont have copyright issues)
+
+we successfully add one product to the table.
+
+it shows Product object but we dont know its  not clear
+what type of product object it is whether it is orange or green
+
+in next tutorial how to customize this table and add columns specific to product.
+
+	       8                   Customize the Admin					5:42:36     
+
+in this tutorial how to customize this product table in admin area.
+
+for this u have to create class in admin.py file
+
+class ProductAdmin(admin.ModelAdmin)  like this u have to create in admin.py file.
+
+now check in admin panel area we have one product i add another product strawberry through UI in admin panel.
+
+add few more prodcuts to the Product table example 5 to 10 products.
+
+in next tutorial he shows how to display these products to the public users our website.
+
+because these admin panel is only visible to admins.
+
+anonymous users or other registered users not gonna access to this panel.
+
+Excersize:
+in admin area we can only have Products table only add Offers table also with columns code and discount
+
+define another class inn aadmin.py file like ProductAmin create OfferAdmin also
+
+Note:
+dont add s to classes in Model.py it will add automatically if u add s to word it will give productss
+
+		9 	                Templates					5:47:58
+
+how to replacw hello world with list of products in database when u give products route because first it route to like this
+products-->views.py
+
+we define view functions here these can get called when the browser sends an http request to the server.
+in index view we  change the code to get the records from database and create template to display in browser.
+Product.Objects.all()  returns the all records in the database. (like filter,get,save  also)
+
+create html template for presenting the list of products to the user.
+products-->new--->directory--->templates(give excat name otherwise django gives error)-->index.html ok 5:50:42
+
+in index.html replace item1 item2 with records in databse file 5:53:37
+for this we use {% %}  template tag in django.
+ we can write dynamic code here like looping through records.if statements to render the records.
+5:54:43
+{{}}---whatever we put values in this place django evaluate the expression that we put here and render it in html.
+last step is to end the for block because jango unlike python does not relay on the indentation
+to determine the scope of our block.
+
+
+explained these two syntaxes 5:56:51
+{% %} template tag -dynamically execute the logic we write for loops to repeat some code if statements to dynamically
+        render the content.
+{{}}  to dynamically render the values in in our html markup.
+
+
+		10 	        Adding Bootstrap				5:57:03
+
+this tutorial he shows convert bullet points in html page into carts.
+infront of product names in browser he has to show carts with button
+use bootstrap for building modern and responsive applications.
+https://getbootstrap.com
+in documenetation u can see that how can add bootstrap to our web application.
+in starter template. copy the code and store it in index.html page.
+
+add html file in templates folder in products app k.
+in base.html copy from bootstrap site code line 13 body indicates container for what the user sees in the web page.
+
+
+		11	          Rendering Cards		             6:01:31
+
+6:01:28   replace bullet points with bootstrap cart.
+            display beautiful cards in products home page in a responsive way for mobiles(for small screen)
+             and desktops(for big screen).
+bootstrap-documentation-componemts(left hand side in bootstrap documentation page.)
+(https://getbootstrap.com/docs/4.3/components/card/)
+
+component called card is there in the bootstrap documentation page markup code is there for copy the code.
+in index page replace li and ul with componnent card code . ok because of bullet points
+
+div.row press tab it will give html code
+multiple div.col in div.rows k samee div.col press tab
+
+in this column add bootstrap component card code to display the cards along with name k
+to proper indent the code follow this step
+
+to view toolbars in pycharm view--->toolbar
+to indent code in pycharm   code--->reformat code for easier to read and modify.
+
+6:05:20  rendering images for the site.
+in index.html in card code in src give the actual image path then it will diaplay the images.
+in card title class name of each product do this with {{ }} k
+
+	            12	 	Final Touches					6:06:40
+
+ in this tutorial he shows couple of techniques to improve the look and feel of the page.
+ 1) add navigation bar on the top
+ 2)padding around the elements(because it is very close to panel proper padding)
+
+6:07:06
+ for add navigation bar again bootstrap page navbar component look this  and in this look for Brand navbaar
+ markup is there for render this navigation bar.
+
+ add the brand navar code in base page because this page is master for all pages.
+ base.html below body tag paste the brand navbar code k for navigation.
+
+make slight change structure of our code.(6:08:34)
+
+inn products app
+in templates folder
+
+
+index.html is for product page.
+base.html is for application.       (is not reusable becuase it is in prodcuts app in templates folder)
+for example if u  create another app and u need to use same base.html code and dont write the same base.html
+ code again and again..want to reuse this into multiple apps put it in central then it is reusable.
+
+ project-->new folder-->templates(folder)
+ drag the base.html page from products-->templates(folder) to
+ pyshop projec-->templates(folder) it is standalone folder not related to any app.
+
+
+ we u move base.html file to project template folder then u will run the products page in browser
+ u got template does not exist error
+solution for this
+
+pysharp project-->settings.py file
+base-dir variable is said to us the complete path where we have stored our django project on our disk.
+take this path and append to the templates to it.
+
+6:11:40
+line 55 configuration for loading templates.
+add this line in 59 in settings.py file
+now our base.html in central place we can reuse it any new app.
+
+one last change(6:12:32)
+items are so close to the left to the screen.for this add some padding to the page.
+in base.html wrap the block content with div contianer
+div.container and press tab k
+
+                                        THE END

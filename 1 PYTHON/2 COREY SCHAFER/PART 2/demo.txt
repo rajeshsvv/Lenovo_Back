@@ -1,0 +1,3 @@
+os.stat_result(st_mode=33188, st_ino=40275850, st_dev=167777224,
+st_nlink=1, st_uid=20, st_gid=20, st_size=20, st_atime=145989317,
+st_mtime=1459819315, st_ctime=14598865234566987

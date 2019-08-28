@@ -1,0 +1,140 @@
+ 9:21
+    python interpreter that is the program that knows how to translate or interpret our python code into instructions
+    that computer can understand.
+
+     program exercises:
+18:00           program exercise on hospital patient(new or existing patient).
+22:00           program exercise on favorite colour on input function
+28:05           ask user to weight and convert into kilograms to terminal.
+1:05:10         buy a house with good credit
+1:39:00         car program 2 times start and stop solve this
+1:52:00         exercise related to Nested Loop
+1:59:40         write a program to find the largest number in the list
+2:12:08         write a program to remove duplicates in list
+2:23:49         exercise on dictionary enter phone numbers returns words.
+3:41:39         Roll a Dice.
+
+18:51 input,print are both general purpose functions that are built into python.(for print messages and receiving input)
+43:07 len is also function to count number of characters in string
+        but it is particular to some string specific function that's why it is method.
+
+20:33 expression is piece of code that produces a value.
+
+37:45 formatted strings are particularly useful in situations.
+       where we want to dynamically generate some text with our variable.
+
+
+47:42 find method vs in operator
+        find method returns the index of that character or sequence of the characters
+        in operator produces  a boolean value.
+
+
+56:17 A module in python is a separate file with some reusable code.
+        Math module which contains a bunch of reusable functions for performing mathematical calculations.
+
+        Math is an object like string so we can access its functions or more accurately.
+
+    Math module is different from python 2 to python 3.
+    in google search like this math module python 3.
+    (ceil copysign fabs factorial floor fmod etc)
+
+
+
+1:20:15 While Loops
+        use while loops to execute block of code multiple times.often useful in interactive programs.
+        in future he shows how to build a simple game using while loop.
+
+         write while statement and after that type condition followed by colon as long as this condition is true
+         the code that we write in this block repeatedly executed.
+
+        always use meaningful and descriptive names for your variables.
+
+1:41:00
+            # we use while loops to execute block of code multiple times.
+             #  we use for loop to iterate over a collection such as string.
+            # string is sequence of characters so its look like collection.
+             # we use for loop to iterate over a each character in a string and then do something with it.
+
+1:46:00
+        collection can be a string it can be list it can be range object that is returned from the range object.
+
+
+2:09:30   actually in operator is used check existence of character  or sequence of characters in string.
+            index will return error if number not exist but in operator does not give error.gives boolean value.
+
+#       29  TUPLES(Immutable)               2:13:25
+
+# like list but we cannot modify, add new items, remove existing items
+
+#   count---to count the number of occurrences in an item.
+#   index---to find the index of the first occurrences of an item.
+#   so we can only get info about tuple. we cannot change it ok got it.
+#   we cannot mutate or change the tuple they are immutable.
+
+2:30:49
+        we need to break our code into smaller more manageable and more maintainable chunks called FUNCTIONS.
+
+        it is container for few lines of code that performs a specific task.
+
+2:38:23 parameters vs arguments(both are not same okay)
+        parameters are holes or placeholders that we define in our function for receiving information.
+         arguments are actual pieces of information that we supply to these functions.
+
+2:42:50 most of the cases use position arguments.
+        keyword arguments help us improve the readability of the code.
+        when u pass numerical values to them use keyword arguments because it will improve readablity of u r program.
+        always pass keyword arguments after the positional arguments otherwise u get an error.
+        if u pass mix parameters first positional and next keyword arguments.
+
+# 36 Return Statement   2:45:00
+
+        # how to create functions that returns values.
+        # this case is useful when if we are doing some kind of calculation and you want to return the result
+        # to whoever is using your function.
+        # by default all functions return the  value none.
+          so if u don't have return statement here by default python returns none.
+
+        #None represents the absence of value.
+        # when use return statement in function then u have to call the function with the help of print
+        # otherwise directly call the function without print.
+        # Each function should be response for one and only task and the task clearly explained in the name of the function.
+
+#  38 Exceptions       2:53:54
+
+        # how to handle errors in python program
+        # exit code 0 means our code executes successfully no errors.
+        # exit code 1 means our program crashes.
+        #  exception is kind of error that crashes our program.
+
+#       44 PACKAGES         3:30:28
+
+        # packages are another way to organise our code.
+        # if a project folder contains many modules or files it will be bloated.
+        # so better approach is organize related modules inside of a package so package is container
+        # for multiple modules. in a file system package is a directory or folder.
+        # packages are mostly used in DJANGO framework web application(3:36:20)
+
+
+#how to create and use packages in python   3:31:29
+
+#               create a new folder called new directory to make it package we need to add special file in it.
+#                that is called __init__.py when python sees this file it treated as package.
+
+# randomly pick an item from list we have powerful method.
+# example we have team members and you want to randomly pick someone as the leader.  random.choice()
+# when you want to return python from function you dont have to add this paranthesis in tuple case
+# pep python enhancement proposal(3:44:09) pep8 all the best practice for formatting our code.
+
+
+#       47 PYPY & PIP           3:50:47
+
+# pypi-Python Package Index(in this directory you can find packages for doing awesome things)
+# search pypi.com for community packages
+# weeb scraping- you build an engine and have that engine browse a website and extract info from HTML files.
+# same technique that google does to index various websites.
+#so they have several engines or web crawlers are looking at various websites and extract info from their pages.
+# browser automation also we can see here.
+#becuase u can automate the testing of your application
+# how to install packages from pypi.org.
+# open google->pypi.org->openpyxl(in search box->package use for working with excel spreadsheets)
+#pip install openpyxl in terminal in your python and check for path external libraries k
