@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/PYTHON PROGRAMS LENOVO/3_third_notes/2_impliment_iterator_through_class.py" line="27" mnemonic="9" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="4fdc8363-599a-4609-9d85-f912f97f3b12" name="Default Changelist" comment="" />
+    <list default="true" id="4fdc8363-599a-4609-9d85-f912f97f3b12" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHON PROGRAMS LENOVO/list_comprehension.py" beforeDir="false" afterPath="$PROJECT_DIR$/PYTHON PROGRAMS LENOVO/1_first_notes/list_comprehension.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHON PROGRAMS LENOVO/shallow_deep_copy.py" beforeDir="false" afterPath="$PROJECT_DIR$/PYTHON PROGRAMS LENOVO/Python Programs/shallow_deep_copy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHON PROGRAMS LENOVO/sys_argv.py" beforeDir="false" afterPath="$PROJECT_DIR$/PYTHON PROGRAMS LENOVO/Python Programs/sys_argv.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,19 +14,10 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/PYTHON PROGRAMS LENOVO/4_fourth_notes/1_operator_overloading.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="IdeDocumentHistory">
@@ -108,6 +101,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
@@ -261,7 +255,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24330357" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24330357" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -388,7 +382,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PYTHON PROGRAMS LENOVO/operators &amp; Zip.py" />
-    <entry file="file://$PROJECT_DIR$/PYTHON PROGRAMS LENOVO/list_comprehension.py">
+    <entry file="file://$PROJECT_DIR$/PYTHON PROGRAMS LENOVO/1_first_notes/list_comprehension.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40">
           <caret line="2" column="38" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
@@ -402,7 +396,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PYTHON PROGRAMS LENOVO/shallow_deep_copy.py">
+    <entry file="file://$PROJECT_DIR$/PYTHON PROGRAMS LENOVO/Python Programs/shallow_deep_copy.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret lean-forward="true" />
@@ -430,7 +424,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PYTHON PROGRAMS LENOVO/sys_argv.py">
+    <entry file="file://$PROJECT_DIR$/PYTHON PROGRAMS LENOVO/Python Programs/sys_argv.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
@@ -457,6 +451,9 @@
           <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PYTHON PROGRAMS NOUS/1_Dataflair/Dataflair_6parts/part2.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
