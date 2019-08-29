@@ -2,7 +2,7 @@
 n=",".join('12345')
 print(n)
 
-n=n.split(",")
+n=n.split(".")
 print(n)
 
 
@@ -11,6 +11,6 @@ print(n)
 s=",".join("Hi Hello")
 print(s)
 
-p=s.split(".")
+p=s.split(",")
 print(p)
 

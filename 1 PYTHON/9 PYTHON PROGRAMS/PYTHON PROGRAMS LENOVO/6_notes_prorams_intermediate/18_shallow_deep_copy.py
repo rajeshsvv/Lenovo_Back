@@ -5,6 +5,7 @@ b=a.copy()
 print(a,b)
 a.append(40)
 print(b,a)
+print('---')
 
 import copy
 c=copy.deepcopy(a)

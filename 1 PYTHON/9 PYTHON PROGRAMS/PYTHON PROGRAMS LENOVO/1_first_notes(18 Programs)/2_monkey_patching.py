@@ -1,12 +1,12 @@
 class A:
     def fun(self):
         print("Hi")
-class B:
+
     def monkey(self):
         print("hi Monkey")
 
-    A.fun=monkey
-    a=monkey.A()                         #  Answer----------Hi Monkey
+    m.A.fun=monkey
+    a=m.A()                         #  Answer----------Hi Monkey
     a.fun()
 
 

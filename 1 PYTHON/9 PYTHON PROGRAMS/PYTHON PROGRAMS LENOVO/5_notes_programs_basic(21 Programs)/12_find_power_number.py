@@ -8,4 +8,3 @@ def pow(base_num,pow_num):
 
 print(pow(2,4))
 
-

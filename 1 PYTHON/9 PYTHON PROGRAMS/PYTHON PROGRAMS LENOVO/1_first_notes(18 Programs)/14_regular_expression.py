@@ -6,4 +6,4 @@ print(e.group())
 a=0
 while a<10:
     a+=1
-    print(a)
+    print(a,end=" ")

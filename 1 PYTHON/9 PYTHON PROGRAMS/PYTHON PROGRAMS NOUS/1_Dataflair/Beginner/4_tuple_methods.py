@@ -7,7 +7,7 @@
 
 a=(1,2,3,2,4,5,2,5)
 print(a.index(3))
-print(a.count(5))
+print("count for 5 number:",a.count(5))
 #
 # a=(1,2,3)<(4,5,6)
 # print(a)

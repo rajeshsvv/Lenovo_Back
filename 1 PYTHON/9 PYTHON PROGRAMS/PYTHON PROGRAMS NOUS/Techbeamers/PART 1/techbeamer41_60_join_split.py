@@ -17,14 +17,7 @@ print(string.isalpha())
 print(number.isnumeric())
 '''
 
-                                    # join vs split
 
-'''
-str = 'pdfcsvjson'
-str=".".join(str)
-print(str)
-print(str.split(","))
-'''
 
                                         # Title() method
 

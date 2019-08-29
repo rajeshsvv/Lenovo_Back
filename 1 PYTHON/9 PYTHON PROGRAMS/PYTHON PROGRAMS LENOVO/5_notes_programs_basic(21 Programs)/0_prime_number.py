@@ -1,3 +1,4 @@
+
 lower = int(input("Enter lower range: "))
 upper = int(input("Enter upper range: "))
 
@@ -8,6 +9,7 @@ for num in range(lower, upper + 1):
                 break
         else:
             print(num,end=" ")
+
 
 # Python Program to print Prime Numbers from 1 to N using For Loop
 '''

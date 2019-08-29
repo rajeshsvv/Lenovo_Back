@@ -74,7 +74,7 @@ say_hello=lambda:"hello"
 
 months = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec']
 oddMonths = [iter for index, iter in enumerate(months) if (index%2 == 0)]
-oddMonths
+print(oddMonths)
 
 item=[n*2 for n in range(10)]
 print(item)

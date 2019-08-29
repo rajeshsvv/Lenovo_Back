@@ -3,15 +3,17 @@ def search(list,n):
     while i<len(list):
         if list[i]==n:
             return True
-        i-=1
+        i+=1
     return False
 list=[1,2,3,4,5,6,7,8,9]
-n=8
+n=60
 
-# print(search(list,10))
+print(search(list,8))
+
 if search(list,n):
     print("Found Number",n)
 else:
     print("Number not found")
+
 
 
